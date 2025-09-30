@@ -770,7 +770,7 @@
                             <div class="tabs-container">
                                 <ul class="nav nav-tabs" id="criteriosTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="tab0-tab" data-bs-toggle="tab" data-bs-target="#tab0" type="button" role="tab" aria-controls="tab0" aria-selected="false">
+                                        <button class="nav-link active" id="tab0-tab" data-bs-toggle="tab" data-bs-target="#tab0" type="button" role="tab" aria-controls="tab0" aria-selected="true">
                                             <span class="numero-circulo">1</span> SNI/SNCA
                                         </button>
                                     </li>
@@ -779,18 +779,207 @@
                                             <span class="numero-circulo">2</span> Definitividad
                                         </button>
                                     </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                            <span class="numero-circulo">3</span> Perfil PRODEP
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                            <span class="numero-circulo">4</span> Tutorías
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
+                                            <span class="numero-circulo">5</span> Publicaciones
+                                        </button>
+                                    </li>
                                 </ul>
 
                                 <div class="tab-content p-3" id="criteriosTabsContent">
-                                    <div class="tab-content fade show active" id="tab0" role="tabpanel" aria-labelledby="tab0-tab">
-                                        <h4>APARTADO 5. Participación como ponente (Máximo seis ponencias)</h4>
-                                        <li style="margin-left:20px;">5.12 Conferencias y charlas de difusión y promoción de la ciencia y la cultura</li>
+                                    <div class="tab-pane fade show active" id="tab0" role="tabpanel" aria-labelledby="tab0-tab">
+                                        <h4>SNI/SNCA - Sistema Nacional de Investigadores / Sistema Nacional de Creadores de Arte</h4>
                                         <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterio</th>
+                                                        <th>Descripción</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>SNI Nivel III</td>
+                                                        <td>Investigador Nacional Nivel III</td>
+                                                        <td>100 puntos</td>
+                                                        <td><span class="badge bg-success">Cumplido</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SNI Nivel II</td>
+                                                        <td>Investigador Nacional Nivel II</td>
+                                                        <td>80 puntos</td>
+                                                        <td><span class="badge bg-warning">En proceso</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SNI Nivel I</td>
+                                                        <td>Investigador Nacional Nivel I</td>
+                                                        <td>60 puntos</td>
+                                                        <td><span class="badge bg-secondary">No aplica</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SNCA</td>
+                                                        <td>Creador Nacional de Arte</td>
+                                                        <td>70 puntos</td>
+                                                        <td><span class="badge bg-info">Pendiente</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        
-                                        <h4>APARTADO 6. Productividad académica</h4>
-                                        <li style="margin-left:20px;">6.1 Publicación de revistas de divulgación que forman parte del índice de Revistas mexicanas de divulgación cientifica CONACyT</li>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                        <h4>Definitividad - Condición laboral</h4>
                                         <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterio</th>
+                                                        <th>Descripción</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Definitividad</td>
+                                                        <td>Plaza de base o definitiva</td>
+                                                        <td>50 puntos</td>
+                                                        <td><span class="badge bg-success">Cumplido</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interinato</td>
+                                                        <td>Plaza por interinato</td>
+                                                        <td>30 puntos</td>
+                                                        <td><span class="badge bg-secondary">No aplica</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contrato</td>
+                                                        <td>Plaza por contrato</td>
+                                                        <td>20 puntos</td>
+                                                        <td><span class="badge bg-secondary">No aplica</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                        <h4>Perfil PRODEP - Programa para el Desarrollo Profesional Docente</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterio</th>
+                                                        <th>Descripción</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Perfil PRODEP Vigente</td>
+                                                        <td>Perfil deseable vigente</td>
+                                                        <td>40 puntos</td>
+                                                        <td><span class="badge bg-success">Cumplido</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Perfil PRODEP Vencido</td>
+                                                        <td>Perfil deseable vencido</td>
+                                                        <td>20 puntos</td>
+                                                        <td><span class="badge bg-warning">En renovación</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sin Perfil</td>
+                                                        <td>Sin perfil PRODEP</td>
+                                                        <td>0 puntos</td>
+                                                        <td><span class="badge bg-danger">No cumple</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                        <h4>Tutorías - Actividades de orientación académica</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterio</th>
+                                                        <th>Descripción</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Tutorías Grupales</td>
+                                                        <td>Tutorías a grupos completos</td>
+                                                        <td>25 puntos</td>
+                                                        <td><span class="badge bg-success">Cumplido</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tutorías Individuales</td>
+                                                        <td>Tutorías personalizadas</td>
+                                                        <td>15 puntos</td>
+                                                        <td><span class="badge bg-info">En proceso</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sin Tutorías</td>
+                                                        <td>Sin actividades tutoriales</td>
+                                                        <td>0 puntos</td>
+                                                        <td><span class="badge bg-secondary">No aplica</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                                        <h4>Publicaciones - Productos académicos publicados</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterio</th>
+                                                        <th>Descripción</th>
+                                                        <th>Puntaje</th>
+                                                        <th>Estado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Artículos Indexados</td>
+                                                        <td>Publicaciones en revistas indexadas</td>
+                                                        <td>30 puntos</td>
+                                                        <td><span class="badge bg-success">Cumplido</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Libros Publicados</td>
+                                                        <td>Libros o capítulos de libro</td>
+                                                        <td>25 puntos</td>
+                                                        <td><span class="badge bg-warning">En proceso</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Memorias en Congresos</td>
+                                                        <td>Memorias publicadas</td>
+                                                        <td>15 puntos</td>
+                                                        <td><span class="badge bg-info">Pendiente</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
